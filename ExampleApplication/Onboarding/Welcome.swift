@@ -29,7 +29,7 @@ struct Welcome: View {
                 ),
                 OnboardingInformationView.Content(
                     icon: {
-                        Image(systemName: "figure.disc.sports")
+                        Image(systemName: "lizard.fill")
                             .accessibilityHidden(true)
                     },
                     title: "WELCOME_AREA2_TITLE",
@@ -37,7 +37,7 @@ struct Welcome: View {
                 ),
                 OnboardingInformationView.Content(
                     icon: {
-                        Image(systemName: "figure.skiing.crosscountry")
+                        Image(systemName: "fish.fill")
                             .accessibilityHidden(true)
                     },
                     title: "WELCOME_AREA3_TITLE",
