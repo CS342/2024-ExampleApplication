@@ -21,7 +21,7 @@ struct Welcome: View {
             areas: [
                 OnboardingInformationView.Content(
                     icon: {
-                        Image(systemName: "tortoise.fill")
+                        Image(systemName: "figure.skiing.downhill")
                             .accessibilityHidden(true)
                     },
                     title: "WELCOME_AREA1_TITLE",
