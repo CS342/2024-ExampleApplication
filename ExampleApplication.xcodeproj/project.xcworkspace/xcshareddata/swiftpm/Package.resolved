@@ -145,6 +145,24 @@
       }
     },
     {
+      "identity" : "researchkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/StanfordBDHG/ResearchKit",
+      "state" : {
+        "revision" : "209164ed20592a2213c4bd69cefcb078d9de0692",
+        "version" : "2.2.21"
+      }
+    },
+    {
+      "identity" : "researchkitonfhir",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/StanfordBDHG/ResearchKitOnFHIR",
+      "state" : {
+        "revision" : "ea4d9691591594177e7dfbc8c246324855d73eb5",
+        "version" : "1.0.1"
+      }
+    },
+    {
       "identity" : "spezi",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/StanfordSpezi/Spezi",
@@ -232,6 +250,15 @@
       "state" : {
         "revision" : "8fb6d9f1a080661c0cc564a93b82ead3c8d44d4f",
         "version" : "1.0.2"
+      }
+    },
+    {
+      "identity" : "speziquestionnaire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/StanfordSpezi/SpeziQuestionnaire.git",
+      "state" : {
+        "revision" : "fac0bb02f7027b4c09bd7afdad55eb7b47ec67f3",
+        "version" : "1.0.1"
       }
     },
     {
