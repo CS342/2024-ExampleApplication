@@ -16,6 +16,7 @@ struct HomeView: View {
         case schedule
         case contact
         case mockUpload
+        case llmInteraction
     }
     
     static var accountEnabled: Bool {
@@ -46,6 +47,11 @@ struct HomeView: View {
                         Label("MOCK_WEB_SERVICE_TAB_TITLE", systemImage: "server.rack")
                     }
             }
+            LLMInteraction(presentingAccount: $presentingAccount)
+                .tag(Tabs.llmInteraction)
+                .tabItem {
+                    Label("LLM_INTERACTION_TAB_TITLE", systemImage: "captions.bubble.fill")
+                }
         }
             .sheet(isPresented: $presentingAccount) {
                 AccountSheet()

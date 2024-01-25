@@ -12,6 +12,9 @@ import SpeziFirebaseAccount
 import SpeziFirebaseStorage
 import SpeziFirestore
 import SpeziHealthKit
+import SpeziLLM
+import SpeziLLMLocal
+import SpeziLLMOpenAI
 import SpeziMockWebService
 import SpeziOnboarding
 import SpeziScheduler
@@ -55,6 +58,11 @@ class ExampleApplicationDelegate: SpeziAppDelegate {
             
             ExampleApplicationScheduler()
             OnboardingDataSource()
+            
+            LLMRunner {
+                LLMLocalRunnerSetupTask()
+                LLMOpenAIRunnerSetupTask()
+            }
         }
     }
     

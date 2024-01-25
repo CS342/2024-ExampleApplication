@@ -306,6 +306,26 @@
         }
       }
     },
+    "LLM_CHAT_VIEW_TITLE" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LLM Chat"
+          }
+        }
+      }
+    },
+    "LLM_INTERACTION_TAB_TITLE" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LLM Interaction"
+          }
+        }
+      }
+    },
     "MOCK_WEB_SERVICE_TAB_TITLE" : {
       "comment" : "MARK: - Mock Upload Data Storage Provider",
       "localizations" : {
