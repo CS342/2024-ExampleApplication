@@ -12,11 +12,13 @@ import SpeziLLMOpenAI
 import SwiftUI
 
 
+/// Showcases a minimal demo of SpeziLLM
 struct LLMInteraction: View {
     @Binding var presentingAccount: Bool
     
     @State var showOnboarding = true
     
+    /// OpenAI model
     @State var openAIModel: LLM = LLMOpenAI(
         parameters: .init(
             modelType: .gpt4_1106_preview,
@@ -26,6 +28,7 @@ struct LLMInteraction: View {
         LLMOpenAIFunctionWeather()
     }
     
+    /// Local Phi-2 model
     @State var localModel: LLM = LLMLocal(
         modelPath: .cachesDirectory.appending(path: "llm.gguf"),
         contextParameters: .init(contextWindowSize: 1024),

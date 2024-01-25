@@ -9,6 +9,7 @@
 import SpeziLLMOpenAI
 
 
+/// OpenAI Function that enables the LLM to fetch the current weather.
 struct LLMOpenAIFunctionWeather: LLMFunction {
     enum TemperatureUnit: String, LLMFunctionParameterEnum {
         case celsius

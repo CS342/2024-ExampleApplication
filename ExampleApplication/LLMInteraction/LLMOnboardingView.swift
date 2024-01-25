@@ -11,6 +11,7 @@ import SpeziOnboarding
 import SwiftUI
 
 
+/// Provide an onboarding flow for the LLM demo in ``LLMInteraction``.
 struct LLMOnboardingView: View {
     @Binding var showOnboarding: Bool
     

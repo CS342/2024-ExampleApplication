@@ -12,6 +12,7 @@ import SpeziViews
 import SwiftUI
 
 
+/// Onboarding view that downloads a model to the local device.
 struct LLMLocalDownloadOnboarding: View {
     @Environment(OnboardingNavigationPath.self) private var onboardingNavigationPath
     
