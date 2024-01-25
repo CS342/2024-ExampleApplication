@@ -19,7 +19,7 @@ struct LLMLocalDownloadOnboarding: View {
     
     var body: some View {
         LLMLocalDownloadView(
-            llmDownloadUrl: LLMLocalDownloadManager.LLMUrlDefaults.phi2ModelUrl,
+            llmDownloadUrl: LLMLocalDownloadManager.LLMUrlDefaults.llama2ChatModelUrl,
             llmStorageUrl: .cachesDirectory.appending(path: "llm.gguf")
         ) {
             onboardingNavigationPath.nextStep()

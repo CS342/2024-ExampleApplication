@@ -28,11 +28,10 @@ struct LLMInteraction: View {
         LLMOpenAIFunctionWeather()
     }
     
-    /// Local Phi-2 model
+    /// Local Llama2 model
     @State var localModel: LLM = LLMLocal(
         modelPath: .cachesDirectory.appending(path: "llm.gguf"),
-        contextParameters: .init(contextWindowSize: 1024),
-        formatChat: LLMLocal.PromptFormattingDefaults.phi2
+        contextParameters: .init(contextWindowSize: 1024)
     )
     
     var body: some View {
