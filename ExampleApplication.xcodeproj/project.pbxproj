@@ -69,6 +69,15 @@
 		653A256228338800005D4D48 /* ExampleApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653A256128338800005D4D48 /* ExampleApplicationTests.swift */; };
 		9733CFC62A8066DE001B7ABC /* SpeziOnboarding in Frameworks */ = {isa = PBXBuildFile; productRef = 2FE5DC8029EDD91D004B9AB4 /* SpeziOnboarding */; };
 		9739A0C62AD7B5730084BEA5 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9739A0C52AD7B5730084BEA5 /* FirebaseStorage */; };
+		975AF9212B63177500CB02A2 /* SpeziLLM in Frameworks */ = {isa = PBXBuildFile; productRef = 975AF9202B63177500CB02A2 /* SpeziLLM */; };
+		975AF9232B63177500CB02A2 /* SpeziLLMLocal in Frameworks */ = {isa = PBXBuildFile; productRef = 975AF9222B63177500CB02A2 /* SpeziLLMLocal */; };
+		975AF9252B63177500CB02A2 /* SpeziLLMLocalDownload in Frameworks */ = {isa = PBXBuildFile; productRef = 975AF9242B63177500CB02A2 /* SpeziLLMLocalDownload */; };
+		975AF9272B63177500CB02A2 /* SpeziLLMOpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 975AF9262B63177500CB02A2 /* SpeziLLMOpenAI */; };
+		979EC7732B631A1800B63213 /* LLMInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979EC76C2B631A1800B63213 /* LLMInteraction.swift */; };
+		979EC7742B631A1800B63213 /* LLMLocalDownloadOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979EC76E2B631A1800B63213 /* LLMLocalDownloadOnboarding.swift */; };
+		979EC7752B631A1800B63213 /* LLMOpenAIFunctionWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979EC7702B631A1800B63213 /* LLMOpenAIFunctionWeather.swift */; };
+		979EC7762B631A1800B63213 /* LLMOpenAITokenOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979EC7712B631A1800B63213 /* LLMOpenAITokenOnboarding.swift */; };
+		979EC7772B631A1800B63213 /* LLMOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979EC7722B631A1800B63213 /* LLMOnboardingView.swift */; };
 		97D73D6A2AD860AD00B47FA0 /* SpeziFirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 97D73D692AD860AD00B47FA0 /* SpeziFirebaseStorage */; };
 		A9720E432ABB68CC00872D23 /* AccountSetupHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9720E422ABB68CC00872D23 /* AccountSetupHeader.swift */; };
 		A9D83F962B083794000D0C78 /* SpeziFirebaseAccountStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A9D83F952B083794000D0C78 /* SpeziFirebaseAccountStorage */; };
@@ -139,6 +148,11 @@
 		653A256128338800005D4D48 /* ExampleApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApplicationTests.swift; sourceTree = "<group>"; };
 		653A256728338800005D4D48 /* ExampleApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		653A258928339462005D4D48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		979EC76C2B631A1800B63213 /* LLMInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLMInteraction.swift; sourceTree = "<group>"; };
+		979EC76E2B631A1800B63213 /* LLMLocalDownloadOnboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLMLocalDownloadOnboarding.swift; sourceTree = "<group>"; };
+		979EC7702B631A1800B63213 /* LLMOpenAIFunctionWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLMOpenAIFunctionWeather.swift; sourceTree = "<group>"; };
+		979EC7712B631A1800B63213 /* LLMOpenAITokenOnboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLMOpenAITokenOnboarding.swift; sourceTree = "<group>"; };
+		979EC7722B631A1800B63213 /* LLMOnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLMOnboardingView.swift; sourceTree = "<group>"; };
 		A9720E422ABB68CC00872D23 /* AccountSetupHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSetupHeader.swift; sourceTree = "<group>"; };
 		A9DFE8A82ABE551400428242 /* AccountButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountButton.swift; sourceTree = "<group>"; };
 		A9FE7ACF2AA39BAB0077B045 /* AccountSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSheet.swift; sourceTree = "<group>"; };
@@ -149,16 +163,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				975AF9212B63177500CB02A2 /* SpeziLLM in Frameworks */,
 				9733CFC62A8066DE001B7ABC /* SpeziOnboarding in Frameworks */,
 				2FE5DC6429EDD883004B9AB4 /* SpeziAccount in Frameworks */,
+				975AF9232B63177500CB02A2 /* SpeziLLMLocal in Frameworks */,
 				2FB099AF2A875DF100B20952 /* FirebaseAuth in Frameworks */,
 				97D73D6A2AD860AD00B47FA0 /* SpeziFirebaseStorage in Frameworks */,
+				975AF9272B63177500CB02A2 /* SpeziLLMOpenAI in Frameworks */,
 				2FE5DC6729EDD894004B9AB4 /* SpeziContact in Frameworks */,
 				2FE5DC8429EDD934004B9AB4 /* SpeziQuestionnaire in Frameworks */,
 				2FB099B32A875DF100B20952 /* FirebaseFirestoreSwift in Frameworks */,
 				5661551D2AB8384200209B80 /* SwiftPackageList in Frameworks */,
 				2FB099B12A875DF100B20952 /* FirebaseFirestore in Frameworks */,
 				A9D83F962B083794000D0C78 /* SpeziFirebaseAccountStorage in Frameworks */,
+				975AF9252B63177500CB02A2 /* SpeziLLMLocalDownload in Frameworks */,
 				2FB099B62A875E2B00B20952 /* HealthKitOnFHIR in Frameworks */,
 				2FE5DC8A29EDD972004B9AB4 /* SpeziLocalStorage in Frameworks */,
 				2FE5DC8C29EDD972004B9AB4 /* SpeziSecureStorage in Frameworks */,
@@ -321,6 +339,7 @@
 				2FF53D8C2A8729D600042B76 /* ExampleApplicationStandard.swift */,
 				2F4E23822989D51F0013F3D9 /* ExampleApplicationTestingSetup.swift */,
 				2FC975A72978F11A00BA99FE /* Home.swift */,
+				979EC76B2B631A1800B63213 /* LLMInteraction */,
 				A9720E412ABB68B300872D23 /* Account */,
 				2FE5DC2829EDD398004B9AB4 /* Onboarding */,
 				2FE5DC3B29EDD7D0004B9AB4 /* Schedule */,
@@ -356,6 +375,34 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		979EC76B2B631A1800B63213 /* LLMInteraction */ = {
+			isa = PBXGroup;
+			children = (
+				979EC76D2B631A1800B63213 /* Local */,
+				979EC76F2B631A1800B63213 /* OpenAI */,
+				979EC7722B631A1800B63213 /* LLMOnboardingView.swift */,
+				979EC76C2B631A1800B63213 /* LLMInteraction.swift */,
+			);
+			path = LLMInteraction;
+			sourceTree = "<group>";
+		};
+		979EC76D2B631A1800B63213 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				979EC76E2B631A1800B63213 /* LLMLocalDownloadOnboarding.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		979EC76F2B631A1800B63213 /* OpenAI */ = {
+			isa = PBXGroup;
+			children = (
+				979EC7702B631A1800B63213 /* LLMOpenAIFunctionWeather.swift */,
+				979EC7712B631A1800B63213 /* LLMOpenAITokenOnboarding.swift */,
+			);
+			path = OpenAI;
 			sourceTree = "<group>";
 		};
 		A9720E412ABB68B300872D23 /* Account */ = {
@@ -410,6 +457,10 @@
 				9739A0C52AD7B5730084BEA5 /* FirebaseStorage */,
 				97D73D692AD860AD00B47FA0 /* SpeziFirebaseStorage */,
 				A9D83F952B083794000D0C78 /* SpeziFirebaseAccountStorage */,
+				975AF9202B63177500CB02A2 /* SpeziLLM */,
+				975AF9222B63177500CB02A2 /* SpeziLLMLocal */,
+				975AF9242B63177500CB02A2 /* SpeziLLMLocalDownload */,
+				975AF9262B63177500CB02A2 /* SpeziLLMOpenAI */,
 			);
 			productName = ExampleApplication;
 			productReference = 653A254D283387FE005D4D48 /* ExampleApplication.app */;
@@ -504,6 +555,7 @@
 				2FE750CA2A87240100723EAE /* XCRemoteSwiftPackageReference "SpeziMockWebService" */,
 				2FB099B42A875E2B00B20952 /* XCRemoteSwiftPackageReference "HealthKitOnFHIR" */,
 				5661551B2AB8384200209B80 /* XCRemoteSwiftPackageReference "swift-package-list" */,
+				975AF91F2B63177400CB02A2 /* XCRemoteSwiftPackageReference "SpeziLLM" */,
 			);
 			productRefGroup = 653A254E283387FE005D4D48 /* Products */;
 			projectDirPath = "";
@@ -576,17 +628,22 @@
 				2FE5DCB129EE6107004B9AB4 /* AccountOnboarding.swift in Sources */,
 				2F4FC8D729EE69D300BFFE26 /* MockUpload.swift in Sources */,
 				2FE5DC3A29EDD7CA004B9AB4 /* Welcome.swift in Sources */,
+				979EC7732B631A1800B63213 /* LLMInteraction.swift in Sources */,
 				2FE5DC3829EDD7CA004B9AB4 /* InterestingModules.swift in Sources */,
+				979EC7772B631A1800B63213 /* LLMOnboardingView.swift in Sources */,
+				979EC7752B631A1800B63213 /* LLMOpenAIFunctionWeather.swift in Sources */,
 				2FE5DC3529EDD7CA004B9AB4 /* Consent.swift in Sources */,
 				2FE5DC4529EDD7F2004B9AB4 /* Binding+Negate.swift in Sources */,
 				2FC975A82978F11A00BA99FE /* Home.swift in Sources */,
 				2FE5DC4E29EDD7FA004B9AB4 /* ScheduleView.swift in Sources */,
 				A9DFE8A92ABE551400428242 /* AccountButton.swift in Sources */,
 				2FE5DC3729EDD7CA004B9AB4 /* OnboardingFlow.swift in Sources */,
+				979EC7742B631A1800B63213 /* LLMLocalDownloadOnboarding.swift in Sources */,
 				2F1AC9DF2B4E840E00C24973 /* ExampleApplication.docc in Sources */,
 				2FF53D8D2A8729D600042B76 /* ExampleApplicationStandard.swift in Sources */,
 				2FE5DC4729EDD7F2004B9AB4 /* CodableArray+RawRepresentable.swift in Sources */,
 				A9720E432ABB68CC00872D23 /* AccountSetupHeader.swift in Sources */,
+				979EC7762B631A1800B63213 /* LLMOpenAITokenOnboarding.swift in Sources */,
 				2FE5DC4029EDD7EE004B9AB4 /* FeatureFlags.swift in Sources */,
 				2FE5DC4629EDD7F2004B9AB4 /* Bundle+Image.swift in Sources */,
 				2FE5DC4F29EDD7FA004B9AB4 /* EventContext.swift in Sources */,
@@ -704,6 +761,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = TEST;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Test;
@@ -852,6 +910,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -908,6 +967,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1252,6 +1312,14 @@
 				minimumVersion = 3.0.10;
 			};
 		};
+		975AF91F2B63177400CB02A2 /* XCRemoteSwiftPackageReference "SpeziLLM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/StanfordSpezi/SpeziLLM";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.6.1;
+			};
+		};
 		97F466E62A76BBEE005DC9B4 /* XCRemoteSwiftPackageReference "SpeziOnboarding" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/StanfordSpezi/SpeziOnboarding";
@@ -1381,6 +1449,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2FE5DC9029EDD9C3004B9AB4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		975AF9202B63177500CB02A2 /* SpeziLLM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 975AF91F2B63177400CB02A2 /* XCRemoteSwiftPackageReference "SpeziLLM" */;
+			productName = SpeziLLM;
+		};
+		975AF9222B63177500CB02A2 /* SpeziLLMLocal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 975AF91F2B63177400CB02A2 /* XCRemoteSwiftPackageReference "SpeziLLM" */;
+			productName = SpeziLLMLocal;
+		};
+		975AF9242B63177500CB02A2 /* SpeziLLMLocalDownload */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 975AF91F2B63177400CB02A2 /* XCRemoteSwiftPackageReference "SpeziLLM" */;
+			productName = SpeziLLMLocalDownload;
+		};
+		975AF9262B63177500CB02A2 /* SpeziLLMOpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 975AF91F2B63177400CB02A2 /* XCRemoteSwiftPackageReference "SpeziLLM" */;
+			productName = SpeziLLMOpenAI;
 		};
 		97D73D692AD860AD00B47FA0 /* SpeziFirebaseStorage */ = {
 			isa = XCSwiftPackageProductDependency;
