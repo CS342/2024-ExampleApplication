@@ -21,15 +21,13 @@ struct LLMOpenAIFunctionWeather: LLMFunction {
     static let description: String = "Get the current weather in a given location"
     
     
-    // swiftlint:disable attributes
     @Parameter(description: "The city and state of the to be determined weather, e.g. San Francisco, CA")
     var location: String
     @Parameter(description: "The unit of the temperature")
-    var unit: TemperatureUnit
-    // swiftlint:enable attributes
+    var unit: TemperatureUnit?
     
     
     func execute() async throws -> String? {
-        "The weather at \(location) is 30 degrees \(unit)"
+        "The weather at \(location) is 30 degrees \(unit?.rawValue ?? "celsius")"
     }
 }
