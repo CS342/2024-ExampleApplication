@@ -230,7 +230,7 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/StanfordSpezi/SpeziLLM",
       "state" : {
-        "revision" : "4e1e3e7ff5efc37dc63e603eb8fae048fcfadf91",
+        "revision" : "94c1f3bd3eb9412e3321a46730c1572da11bd951",
         "version" : "0.6.1"
       }
     },
