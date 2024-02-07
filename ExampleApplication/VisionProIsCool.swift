@@ -9,13 +9,13 @@
 import SwiftUI
 
 
-struct AppleWatchIsCool: View {
+struct VisionProIsCool: View {
     var body: some View {
-        Image(systemName: "applewatch")
+        Image(systemName: "visionpro")
     }
 }
 
 
 #Preview {
-    AppleWatchIsCool()
+    VisionProIsCool()
 }
