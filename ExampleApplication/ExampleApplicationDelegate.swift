@@ -83,8 +83,12 @@ class ExampleApplicationDelegate: SpeziAppDelegate {
     
     private var healthKit: HealthKit {
         HealthKit {
-            CollectSample(
-                HKQuantityType(.stepCount),
+            CollectSamples(
+                [
+                    HKQuantityType(.stepCount),
+                    HKQuantityType(.dietaryEnergyConsumed),
+                    HKQuantityType(.dietaryProtein)
+                ],
                 deliverySetting: .anchorQuery(.afterAuthorizationAndApplicationWillLaunch)
             )
         }
