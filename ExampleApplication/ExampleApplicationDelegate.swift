@@ -60,8 +60,8 @@ class ExampleApplicationDelegate: SpeziAppDelegate {
             OnboardingDataSource()
             
             LLMRunner {
-                LLMLocalRunnerSetupTask()
-                LLMOpenAIRunnerSetupTask()
+                LLMLocalPlatform()
+                LLMOpenAIPlatform()
             }
         }
     }

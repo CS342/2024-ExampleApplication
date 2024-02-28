@@ -19,6 +19,7 @@ struct LLMLocalDownloadOnboarding: View {
     
     var body: some View {
         LLMLocalDownloadView(
+            downloadDescription: "The application will download the LLama2 7B model which is around 3.5GB",
             llmDownloadUrl: LLMLocalDownloadManager.LLMUrlDefaults.llama2ChatModelUrl,
             llmStorageUrl: .cachesDirectory.appending(path: "llm.gguf")
         ) {
