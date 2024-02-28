@@ -22,7 +22,7 @@ struct LLMInteraction: View {
     ) {
         LLMOpenAIFunctionWeather()
     }
-    private static let localSchema = LLMLocalSchema(
+    private static let llmLocalSchema = LLMLocalSchema(
         modelPath: .cachesDirectory.appending(path: "llm.gguf"),
         contextParameters: .init(contextWindowSize: 1024)
     )
@@ -33,7 +33,7 @@ struct LLMInteraction: View {
     /// OpenAI model
     @LLMSessionProvider(schema: llmOpenAISchema) var openAIModel: LLMOpenAISession
     /// Local Llama2 model
-    @LLMSessionProvider(schema: localSchema) var localModel: LLMLocalSession
+    @LLMSessionProvider(schema: llmLocalSchema) var localModel: LLMLocalSession
     
     
     var body: some View {
