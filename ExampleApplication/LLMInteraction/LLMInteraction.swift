@@ -14,30 +14,32 @@ import SwiftUI
 
 /// Showcases a minimal demo of SpeziLLM
 struct LLMInteraction: View {
-    @Binding var presentingAccount: Bool
-    
-    @State var showOnboarding = true
-    
-    /// OpenAI model
-    @State var openAIModel: LLM = LLMOpenAI(
+    private static let llmOpenAISchema = LLMOpenAISchema(
         parameters: .init(
-            modelType: .gpt4_1106_preview,
+            modelType: .gpt4_turbo_preview,
             systemPrompt: "You're speaking in front of Stanford students, be as funny and ironic as possible."
         )
     ) {
         LLMOpenAIFunctionWeather()
     }
-    
-    /// Local Llama2 model
-    @State var localModel: LLM = LLMLocal(
+    private static let localSchema = LLMLocalSchema(
         modelPath: .cachesDirectory.appending(path: "llm.gguf"),
         contextParameters: .init(contextWindowSize: 1024)
     )
     
+    @Binding var presentingAccount: Bool
+    @State var showOnboarding = true
+    
+    /// OpenAI model
+    @LLMSessionProvider(schema: llmOpenAISchema) var openAIModel: LLMOpenAISession
+    /// Local Llama2 model
+    @LLMSessionProvider(schema: localSchema) var localModel: LLMLocalSession
+    
+    
     var body: some View {
         NavigationStack {
             LLMChatView(
-                model: openAIModel
+                session: $openAIModel
             )
                 .navigationTitle("LLM_CHAT_VIEW_TITLE")
                 .toolbar {
@@ -61,8 +63,8 @@ struct LLMInteraction: View {
     LLMInteraction(presentingAccount: .constant(true))
         .previewWith {
             LLMRunner {
-                LLMLocalRunnerSetupTask()
-                LLMOpenAIRunnerSetupTask()
+                LLMLocalPlatform()
+                LLMOpenAIPlatform()
             }
         }
 }
